@@ -10,6 +10,7 @@ var games = [ 438100 , 1172470 , 250820 , 730 , 381210 , 2357570 , 620 , 550 , 7
 var status = 1;  // 1 - online, 7 - invisible
 
 
+
 user = new steamUser();
 user.logOn({"accountName": username, "password": password, "twoFactorCode": steamTotp.generateAuthCode(shared_secret)});
 user.on('loggedOn', () => {
