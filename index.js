@@ -2,8 +2,8 @@ const steamUser = require('steam-user');
 const steamTotp = require('steam-totp');
 const keep_alive = require('./keep_alive.js')
 
-var username = process.env.username;
-var password = process.env.password;
+var username = process.env.user;
+var password = process.env.passw;
 var shared_secret = process.env.shared;
 
 var games = [ 438100 , 1172470 , 250820 , 730 , 381210 , 2357570 , 620 , 550 , 714010 , 1325860 , 100950 , 1494460 , 1222680 , 578080 , 644560 , 1056600 , 346110 , 1203220 , 601360 , 1368910 , 570 , 1671200 , 1898830 , 466240 , 365670 , 407530 , 1335200 , 1333350 , 582660 , 383180 , 958260 , 1928420 , 70 , 863550 , 1056640 , 1721470 , 1222670 ];  // Enter here AppIDs of the needed games
